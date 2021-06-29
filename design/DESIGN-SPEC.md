@@ -10,7 +10,7 @@ The health check route is necessary for monitoring uptime of the application.
 
 ## Login - `http://localhost:9876/login`
 
-<img src="https://raw.githubusercontent.com/Swell-Platform/qa-engineer-skills-test/master/design/home%20screen.png" width="500px" >
+<img src="https://raw.githubusercontent.com/Swell-Platform/qa-engineer-skills-test/master/design/login%20screen.png" width="500px" >
 
 - The login page should contain a form with an input for an email address and password. (design above)
 - When a user enters their username or password they have already registered before, they should be taken to the homepage.
