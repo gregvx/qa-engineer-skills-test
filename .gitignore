@@ -105,3 +105,6 @@ dist
 
 # editors
 .idea
+
+# os
+.DS_Store

@@ -9,7 +9,7 @@ The health check route is necessary for monitoring uptime of the application.
 ```
 
 ## Login - `http://localhost:9876/login`
-- The login page should contain a form with an input for an email address, or password. (design below)
+- The login page should contain a form with an input for an email address and password. (design below)
 - When a user enters their username or password they have already registered before, they should be taken to the homepage.
 - If a user enters a username or password that has never been registered before, they should be shown an error (design below)
 - If a user enters a blank username or blank password they should be shown an error that they need to enter both (design below)
