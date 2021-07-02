@@ -12,7 +12,7 @@
     "clean": "rimraf dist",
     "dev": "npm run clean && run-p dev:**",
     "dev:build": "npm run build -- -w",
-    "dev:server": "wait-on dist/server.js && nodemon --inspect dist/server.js",
+    "dev:server": "wait-on dist/server.js && cross-env cp -r ./src/app/public ./dist/app/public && nodemon --inspect --watch dist dist/server.js",
     "prettier": "prettier ./src --write",
     "start": "npm run dev"
   },
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Swell-Platform/qa-engineer-skills-test#readme",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
     "winston": "^3.3.3"
