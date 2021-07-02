@@ -1,18 +1,19 @@
-import { pageTemplate } from '../util/page-template.fn';
+import { pageTemplate } from '../util';
 
-export const loginPage = () =>
+export const loginPage = (error?: string) =>
   pageTemplate(
     `
-      <form id="login-form">
+      <form id="login-form" method="post" action="/">
+        ${error ? `<p class="error">${error}</p>` : ''}
         <label id="username" class="mdc-text-field mdc-text-field--filled">
           <span class="mdc-text-field__ripple"></span>
-          <input type="text" class="mdc-text-field__input" aria-labelledby="my-label">
+          <input required name="emailAddress" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$" class="mdc-text-field__input" aria-labelledby="my-label">
           <span class="mdc-floating-label" id="my-label">Email address</span>
           <span class="mdc-line-ripple"></span>
         </label>
         <label id="password" class="mdc-text-field mdc-text-field--filled">
           <span class="mdc-text-field__ripple"></span>
-          <input type="text" class="mdc-text-field__input" aria-labelledby="my-label">
+          <input required name="password" type="password" class="mdc-text-field__input" aria-labelledby="my-label">
           <span class="mdc-floating-label" id="my-label">Password</span>
           <span class="mdc-line-ripple"></span>
         </label>
@@ -43,6 +44,9 @@ export const loginPage = () =>
           #login-form {
             display: flex;
             flex-direction: column;
+          }
+          .error {
+            color: red;
           }
         </style>
       `

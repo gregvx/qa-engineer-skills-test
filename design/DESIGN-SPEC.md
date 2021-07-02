@@ -37,7 +37,7 @@ Error state:
 
 <img src="https://raw.githubusercontent.com/Swell-Platform/qa-engineer-skills-test/master/design/register%20screen%20error.png" width="500px" >
 
-## Homepage - `http://localhost:9876`
+## Homepage - `http://localhost:9876/home`
 
 <img src="https://raw.githubusercontent.com/Swell-Platform/qa-engineer-skills-test/master/design/home%20screen.png" width="500px" >
 
