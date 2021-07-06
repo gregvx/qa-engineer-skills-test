@@ -4,11 +4,13 @@ import * as path from 'path';
 import { HomeRoutes } from './home';
 import { LoginRoutes } from './login';
 import { logger } from './util';
+import { RegisterRoutes } from './register';
 
 export class AuthenticationApplication {
   public readonly app = express();
   private readonly loginRouter = new LoginRoutes();
   private readonly homeRouter = new HomeRoutes();
+  private readonly registerRouter = new RegisterRoutes();
 
   public init(): void {
     this.initRoutes();
@@ -22,6 +24,8 @@ export class AuthenticationApplication {
     this.app.post('/', this.loginRouter.postLogin);
     this.app.get('/home', this.homeRouter.home);
     this.app.get('/home/:id', this.homeRouter.home);
+    this.app.get('/register', this.registerRouter.getRegister);
+    this.app.post('/register', this.registerRouter.postRegister);
   }
 
   protected healthCheck(_req: express.Request, res: express.Response): express.Response {
