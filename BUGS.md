@@ -8,4 +8,8 @@
 5. When an unrecognized username (one not hardcoded in the set of known test usernames) is provided, an error is displayed but this error display has differences throughout (color, font, sizing, etc) from the original specification. Note the actual vs. scpec in the following images:
 <img src="/screenshots/error1.png" width="500px" >
 <img src="/screenshots/error1spec.png" width="500px" >
-6.
+6. When a user attempts to log in with a blank username and password, the UI displays a popup bubble asking for the password field to be completed rather that displaying the log in error view as specified.
+7. The specification mentions what should happen if the user clicks "forgot password" however, the specification does not show a "forgot passowrd" link or button. The specification itself should be clarified to show how this functionality should be implimented and the app needs the routing and forgot passowrd flow added.
+8. The registration page lacks a field for password confirmation and has multiple formating and layout errors/differeces from the specification. The most glaring is perhaps the misspelling of the word "Register" The the following images showing the actual vs. spec:
+<img src="/screenshots/register1.png" width="500px" >
+<img src="/screenshots/register1spec.png" width="500px" >
