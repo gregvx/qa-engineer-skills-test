@@ -32,14 +32,14 @@ He wants you to do two things:
 8. Respond back to the hiring manager who contacted you and asked you to complete the assessment with the link to the repository.
 
 ## Test Setup Instructions
-cypress.js is required to run tests. It can be installed by running the command:
-npm install cypress --save-dev
-or by following the instructions at
+cypress.js is required to run tests. It can be installed by running the command:  
+npm install cypress --save-dev  
+or by following the instructions at  
 https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements
-once cypress is installed, run the command 
-npm run cypress:open
-to use the Cypress.js tools for tests and debugging, or run 
-npm test
+once cypress is installed, run the command   
+npm run cypress:open  
+to use the Cypress.js tools for tests and debugging, or run  
+npm test  
 to view test results from a command line.
 
 ## Additional notes from candidate
