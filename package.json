@@ -7,14 +7,15 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "PUT YOUR TEST COMMAND HERE",
+    "test": "cypress run",
     "build": "tsc",
     "clean": "rimraf dist",
     "dev": "npm run clean && run-p dev:**",
     "dev:build": "npm run build -- -w",
     "dev:server": "wait-on dist/server.js && cross-env cp -r ./src/app/public ./dist/app/public && nodemon --inspect --watch dist dist/server.js",
     "prettier": "prettier ./src --write",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
   "devDependencies": {
     "@types/express": "^4.17.12",
     "@types/node": "^15.12.4",
+    "cypress": "^8.0.0",
     "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.3.1",
