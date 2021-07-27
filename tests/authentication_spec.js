@@ -7,7 +7,7 @@ const testUser = [userGenerator(0, 'admin@swellcx.com', 'test123', 'Swell Team')
 // by deleting any duplicate record from the database. Watch out for records with the same
 // id and records with the same email since rules regarding db record creation are not known.
 const newTestUser = [userGenerator(1, 'admin2@swellcx.com', 'test123', 'New Swell')];
-/*
+
 describe('Health Checks', () => {
     it('Health Check', () => {
         cy.request(environmentBaseUrl + '/v1/health').then(
@@ -18,8 +18,7 @@ describe('Health Checks', () => {
         )
     })
 })
-*/
-/*
+
 describe('Route Checks', () => {
     it('root route', () => {
         cy.visit(environmentBaseUrl + '/')
@@ -48,8 +47,7 @@ describe('Route Checks', () => {
         cy.url().should('not.include', "home")
     })
 })
-*/
-/*
+
 describe('Login Page Checks', () => {
     it('contains fields and loads home', () => {
         cy.visit(environmentBaseUrl + '/')
@@ -74,13 +72,11 @@ describe('Login Page Checks', () => {
         cy.url().should('include', "register")
     })
 })
-*/
-/*
+
 describe('Registration Page Checks', () => {
     var malformedEmailAddress = "test@domain"
     var malformedPassword = "123"
     var validPassword = "Pas$w0rd"
-    //registration page displays form for name, email address, password, password confirmation
     it('contains fields and loads home', () => {
         cy.visit(environmentBaseUrl + '/register')
         cy.get('#username').type(newTestUser[0].emailAddress)
@@ -89,7 +85,6 @@ describe('Registration Page Checks', () => {
         cy.get('#register').click()
         cy.url().should('include', "home")
     })
-    //bad data in registration fields displays error
     it('bad email causes error', () => {
         cy.visit(environmentBaseUrl + '/register')
         cy.get('#username').type(malformedEmailAddress)
@@ -107,10 +102,8 @@ describe('Registration Page Checks', () => {
         cy.contains('Please ensure passwords are the same')
     })
 })
-*/
+
 describe('Home Page Checks', () => {
-    //home route should be unauthorized if user not logged in
-    //home page of logged in user should display "welcome back" + [user name]
     it('contains fields and loads home', () => {
         cy.visit(environmentBaseUrl + '/')
         cy.get('#username').type(testUser[0].emailAddress)
