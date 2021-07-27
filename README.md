@@ -32,7 +32,7 @@ He wants you to do two things:
 8. Respond back to the hiring manager who contacted you and asked you to complete the assessment with the link to the repository.
 
 ## Test Setup Instructions
-cypress.js is required to run tests. It can be installed by running the command:  
+Cypress.js is required to run tests. It can be installed by running the command:  
 npm install cypress --save-dev  
 or by following the instructions at  
 https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements
@@ -43,4 +43,4 @@ npm test
 to view test results from a command line.
 
 ## Additional notes from candidate
-The autmated tests added here are not comprehensive or complete. They are rather a starting point. Additional information would be needed to write a more complete set of tests. The app being tested here is an incomplete project that is a mess with errors throughout. The specification as well has problems with it that would require conference with product to iron out some issues. My experience with automated testing is with Selenium and Java. Putting together a test suite with Cypress.js and javascript presented a challange that required some self-education along the way to get this put together. In the interest of time, I did not strictly adhere to DRY programming rules.  A more mature and developed test suite would be much cleaner.  
+The automated tests added here are not comprehensive or complete. They are rather a starting point. Additional information would be needed to write a more complete set of tests. The app being tested here is an incomplete project that is a mess with errors throughout. The specification has problems with it as well that would require conference with Product to iron out some issues. My experience with automated testing is with Selenium and Java. Putting together a test suite with Cypress.js and javascript presented a challange that required some self-education along the way to get this put together. In the interest of time, I did not strictly adhere to DRY programming rules.  A more mature and developed test suite would be much cleaner.  
